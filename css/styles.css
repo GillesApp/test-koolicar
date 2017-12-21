@@ -1,0 +1,124 @@
+/* --- Resets --- */
+html {
+	font-size: 18px;
+}
+h1 {
+    font-size: 1.9em;
+    margin: 25px 15px;
+    font-weight: 600;
+}
+a {
+    color: #aa46e6;
+    font-weight: 500;
+}
+a:hover {
+    text-decoration: none;
+}
+.btn {
+    padding: 15px 30px;
+    cursor: pointer;
+} 
+.btn-purple {
+    background-color: #aa46e6;
+}
+.btn-purple:hover {
+    background-color: #862fba;
+}
+.only-768 {display: none;}
+/* --- Resets End --- */
+
+
+/* --- Header --- */
+header {
+    height: 88px;
+    border-bottom: 1px solid lightgrey;
+}
+nav {
+	height: 100%;
+}
+.navbar-brand {
+    margin-left: 15px;
+    height: 55px;
+    width: 155px;
+    background: url(../img/koolicar_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+ul.nav {
+	margin-right: 2vw;
+}
+
+.nav-link {
+	font-weight: 500;
+	color: #737373;
+}
+.nav-link:hover {
+	color: #aa46e6;
+}
+nav button {
+    background-color: #2de6c8;
+    color: #fff;
+    font-weight: 500;
+}
+/* --- Header End --- */
+
+/* --- Content --- */
+span.bold-title {
+	margin: 0 15px;
+    font-weight: 700;
+    font-size: 1.9em;
+}
+.money-btn {
+    margin: 0 15px;
+}
+input.form-control {
+    background: url(../img/calendar-ico.png);
+    background-position: 10px;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+.table td {
+    font-size: 0.9em;
+}
+.promo {
+    color: #2de6c8;
+}
+.amount {
+    color: red;
+}
+/* --- Content End --- */
+
+/* --- Datepicker --- */
+.datepicker table tr td.active.day {
+    background-image: linear-gradient(to bottom, #aa46e6, #aa46e6);
+    color: #fff;
+}
+/* --- Datepicker end --- */
+
+/* --- Responsive  ---  */
+@media (max-width: 992px) { 
+    .btn { padding: 8px 13px;}
+}
+@media (max-width: 768px) { 
+    .no-768 {display: none;}
+    .only-768 {display: inline;}
+
+    nav {z-index: 100; }
+    .nav {flex-direction: column;}
+    #nav-item-list {background-color: #b455ed; border: 1px solid #2de7c9;}
+    .nav-item {text-align: center;}
+    .nav-link {color: #fff;}
+    .nav-link:hover {color: lightgrey;}
+    nav form {text-align: center; justify-content: center;}
+
+    span.bold-title, .money-btn {display: block;}
+    .input-group {flex-direction: column;}
+    .input-group .form-control, 
+    .input-group button {width: 100%; padding: 15px 0px;}
+
+    .table {display: flex; justify-content: center; margin-top: 25px; font-size: 1.2em;}
+    .table th {display: none;}
+    .table td {display: block; border-top: none; padding: 0 20px;}
+    .table td:last-child {margin-bottom: 20px; border-bottom: 1px solid lightgrey; padding-bottom: 20px;}
+}
