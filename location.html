@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Location</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Datepicker CSS -->
+    <!-- <link rel="stylesheet" type="text/css" href="plugins/datepicker/datepicker.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css">
+    <!-- Page CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Navigation bar -->
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="#"></a>
+        <!-- Mobile menu button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-item-list" aria-controls="nav-item-list" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="nav-item-list">
+          <!-- Navigation items list -->
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Inscription</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Connexion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Aide</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn my-2 my-sm-0" >Inscrire mon véhicule</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <section class="container-fluid">
+      <!-- Page title -->
+      <h1>Locations</h1>
+
+      <!-- Options -->
+      <div class="row">
+        <div class="col-md-6">
+          <span class="bold-title">123,34 €</span>
+          <a href="#" class="money-btn">Retirer mon argent</a>
+          <hr>
+        </div>
+        <div class="col-md-6">
+          <div class="input-group input-daterange">
+            <!-- <i class="fa fa-calendar" aria-hidden="true"></i> -->
+            <input type="text" class="form-control datepicker start-date" placeholder="Départ">
+            <input type="text" class="form-control datepicker end-date" placeholder="Retour">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary btn-purple" type="button">Filtrer</button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Véhicules</th>
+            <th scope="col">Début</th>
+            <th scope="col">Fin</th>
+            <th scope="col">Distance</th>
+            <th scope="col">Durée</th>
+            <th scope="col">Statut</th>
+            <th scope="col">Montant</th>
+            <th scope="col">Reçu</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Renault Trafic</td>
+            <td><span class="only-768">Début : </span>22 Sept. 10h45</td>
+            <td><span class="only-768">Fin : </span>22 Sept. 10h45</td>
+            <td><span class="only-768">Distance : </span>145km</td>
+            <td><span class="only-768">Durée : </span>15h45</td>
+            <td><span class="only-768">Statut : </span>Terminée<br><span class="promo">Réduction<span class="only-768"> : </span></span><br><span class="amount">Total<span class="only-768"> : </span></span></td>
+            <td><span class="only-768"><b>Montant : </b></span><b>123,45€</b><br class="no-768"><span><b class="promo-val">20€</b></span><br class="no-768"><span><b class="amount-val">103,45€</b></span></td>
+            <td><a href="#">Télécharger<span class="only-768"> un reçu</span></a></td>
+          </tr>
+          <tr>
+            <td>Renault Trafic</td>
+            <td><span class="only-768">Début : </span>22 Sept. 10h45</td>
+            <td><span class="only-768">Fin : </span>22 Sept. 10h45</td>
+            <td><span class="only-768">Distance : </span>145km</td>
+            <td><span class="only-768">Durée : </span>15h45</td>
+            <td><span class="only-768">Statut : </span>Terminée<br>
+            <td><span class="only-768"><b>Montant : </b></span><b>123,45€</b></td>
+            <td><a href="#">Télécharger<span class="only-768"> un reçu</span></a></td>
+          </tr>
+          <tr>
+            <td>Renault Trafic</td>
+            <td><span class="only-768">Début : </span>22 Sept. 10h45</td>
+            <td><span class="only-768">Fin : </span>22 Sept. 10h45</td>
+            <td><span class="only-768">Distance : </span>145km</td>
+            <td><span class="only-768">Durée : </span>15h45</td>
+            <td><span class="only-768">Statut : </span>Terminée<br>
+            <td><span class="only-768"><b>Montant : </b></span><b>123,45€</b></td>
+            <td><a href="#">Télécharger<span class="only-768"> un reçu</span></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- Datepicker plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script>
+    <!-- Page scripts -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
